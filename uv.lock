@@ -1,0 +1,103 @@
+version = 1
+revision = 2
+requires-python = ">=3.8"
+resolution-markers = [
+    "python_full_version >= '3.9'",
+    "python_full_version < '3.9'",
+]
+
+[[package]]
+name = "itmo-eda-task"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "plotly" },
+    { name = "polars", version = "1.8.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+    { name = "polars", version = "1.32.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "plotly", specifier = ">=6.2.0" },
+    { name = "polars", specifier = ">=1.8.2" },
+]
+
+[[package]]
+name = "narwhals"
+version = "1.42.1"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.9'",
+]
+sdist = { url = "https://files.pythonhosted.org/packages/df/d6/168a787b7800d6c89846b791e4f5ee6b94998a80c8c2838a019d3d71984d/narwhals-1.42.1.tar.gz", hash = "sha256:50a5635b11aeda98cf9c37e839fd34b0a24159f59a4dfae930290ad698320494", size = 492865, upload-time = "2025-06-12T15:15:13.222Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/79/3f/8d450588206b437dd239a6d44230c63095e71135bd95d5a74347d07adbd5/narwhals-1.42.1-py3-none-any.whl", hash = "sha256:7a270d44b94ccdb277a799ae890c42e8504c537c1849f195eb14717c6184977a", size = 359888, upload-time = "2025-06-12T15:15:11.643Z" },
+]
+
+[[package]]
+name = "narwhals"
+version = "2.0.1"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version >= '3.9'",
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e2/8f/51d14e402c4f9d281a2e153a6a805cad5460088027a999faf264b54e7641/narwhals-2.0.1.tar.gz", hash = "sha256:235e61ca807bc21110ca36a4d53888ecc22c42dcdf50a7c886e10dde3fd7f38c", size = 525541, upload-time = "2025-07-29T08:39:04.81Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7f/26/43caf834e47c63883a5eddc02893b7fdbe6a0a4508ff6dc401907f3cc085/narwhals-2.0.1-py3-none-any.whl", hash = "sha256:837457e36a2ba1710c881fb69e1f79ce44fb81728c92ac378f70892a53af8ddb", size = 385436, upload-time = "2025-07-29T08:39:03.163Z" },
+]
+
+[[package]]
+name = "packaging"
+version = "25.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/d4/1fc4078c65507b51b96ca8f8c3ba19e6a61c8253c72794544580a7b6c24d/packaging-25.0.tar.gz", hash = "sha256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f", size = 165727, upload-time = "2025-04-19T11:48:59.673Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl", hash = "sha256:29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484", size = 66469, upload-time = "2025-04-19T11:48:57.875Z" },
+]
+
+[[package]]
+name = "plotly"
+version = "6.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "narwhals", version = "1.42.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+    { name = "narwhals", version = "2.0.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6e/5c/0efc297df362b88b74957a230af61cd6929f531f72f48063e8408702ffba/plotly-6.2.0.tar.gz", hash = "sha256:9dfa23c328000f16c928beb68927444c1ab9eae837d1fe648dbcda5360c7953d", size = 6801941, upload-time = "2025-06-26T16:20:45.765Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ed/20/f2b7ac96a91cc5f70d81320adad24cc41bf52013508d649b1481db225780/plotly-6.2.0-py3-none-any.whl", hash = "sha256:32c444d4c940887219cb80738317040363deefdfee4f354498cc0b6dab8978bd", size = 9635469, upload-time = "2025-06-26T16:20:40.76Z" },
+]
+
+[[package]]
+name = "polars"
+version = "1.8.2"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.9'",
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3d/75/2196c26fe049ecce55a0fa87b22ab3d9477bc9bab38116ed04854fc65ecb/polars-1.8.2.tar.gz", hash = "sha256:42f69277d5be2833b0b826af5e75dcf430222d65c9633872856e176a0bed27a0", size = 4010537, upload-time = "2024-09-24T20:10:15.547Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b5/8b/6829e22a0f4c6e754c2e2b5d81025ab14d7b214018119762f52bad7325aa/polars-1.8.2-cp38-abi3-macosx_10_12_x86_64.whl", hash = "sha256:114be1ebfb051b794fb9e1f15999430c79cc0824595e237d3f45632be3e56d73", size = 31165933, upload-time = "2024-09-24T20:09:21.37Z" },
+    { url = "https://files.pythonhosted.org/packages/8f/cd/5d6b837f42c1b6d87012beca940a075e450a352ab717a649000c2ec57d71/polars-1.8.2-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:e4fc36cfe48972d4c5be21a7cb119d6378fb7af0bb3eeb61456b66a1f43228e3", size = 27488552, upload-time = "2024-09-24T20:09:25.313Z" },
+    { url = "https://files.pythonhosted.org/packages/a7/f3/c317b1bc6759d1ec343c25d5ebd376a07a2e1fd2bd04fdc07ce6b2a855c4/polars-1.8.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:67c1e448d6e38697650b22dd359f13c40b567c0b66686c8602e4367400e87801", size = 32548666, upload-time = "2024-09-24T20:09:28.469Z" },
+    { url = "https://files.pythonhosted.org/packages/1d/df/5ccf44218728caecda9f555879b40fe4ab34ff629c81b9117a1107437fdc/polars-1.8.2-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:570ee86b033dc5a6dbe2cb0df48522301642f304dda3da48f53d7488899a2206", size = 29187225, upload-time = "2024-09-24T20:09:32.1Z" },
+    { url = "https://files.pythonhosted.org/packages/9c/45/77e4fda23368907c06bf70fc722de28d442c5087bbc8a60c29b8396750ea/polars-1.8.2-cp38-abi3-win_amd64.whl", hash = "sha256:ce1a1c1e2150ffcc44a5f1c461d738e1dcd95abbd0f210af0271c7ac0c9f7ef9", size = 32394690, upload-time = "2024-09-24T20:09:35.278Z" },
+]
+
+[[package]]
+name = "polars"
+version = "1.32.0"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version >= '3.9'",
+]
+sdist = { url = "https://files.pythonhosted.org/packages/67/23/6a5f151981f3ac409bed6dc48a3eaecd0592a03eb382693d4c7e749eda8b/polars-1.32.0.tar.gz", hash = "sha256:b01045981c0f23eeccfbfc870b782f93e73b74b29212fdfc8aae0be9024bc1fb", size = 4761045, upload-time = "2025-08-01T01:43:22.413Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e2/40/5b27067d10b5a77ab4094932118e16629ffb20ea9ae5f7d1178e04087891/polars-1.32.0-cp39-abi3-macosx_10_12_x86_64.whl", hash = "sha256:94f7c6a3b30bc99bc6b682ea42bb1ae983e33a302ca21aacbac50ae19e34fcf2", size = 37479518, upload-time = "2025-08-01T01:42:18.603Z" },
+    { url = "https://files.pythonhosted.org/packages/08/b7/ca28ac10d340fb91bffb2751efd52aebc9799ae161b867214c6299c8f75b/polars-1.32.0-cp39-abi3-macosx_11_0_arm64.whl", hash = "sha256:8bf14c16164839e62c741a863942a94a9a463db21e797452fca996c8afaf8827", size = 34214196, upload-time = "2025-08-01T01:42:22.667Z" },
+    { url = "https://files.pythonhosted.org/packages/61/97/fe3797e8e1d4f9eadab32ffe218a841b8874585b6c9bd0f1a26469fb2992/polars-1.32.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f4c15adb97d44766d30c759f5cebbdb64d361e8349ef10b5afc7413f71bf4b72", size = 37985353, upload-time = "2025-08-01T01:42:26.033Z" },
+    { url = "https://files.pythonhosted.org/packages/a0/7e/2baa2858556e970cc6a35c0d8ad34b2f9d982f1766c0a1fec20ca529a947/polars-1.32.0-cp39-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:13af55890734f89b76016a395fb2e7460e7d9feecf50ed2f55cf0f05a1c0c991", size = 35183912, upload-time = "2025-08-01T01:42:30.446Z" },
+    { url = "https://files.pythonhosted.org/packages/ef/41/0e6821dccc5871186a9b95af3990404aa283318263918d33ac974b35cb37/polars-1.32.0-cp39-abi3-win_amd64.whl", hash = "sha256:0397fc2501a5d5f1bb3fe8d27e0c26c7a5349b4110157c0fb7833cd3f5921c9e", size = 37747905, upload-time = "2025-08-01T01:42:33.975Z" },
+    { url = "https://files.pythonhosted.org/packages/c2/93/d06df0817da93f922a67e27e9e0f407856991374daa62687e2a45a18935c/polars-1.32.0-cp39-abi3-win_arm64.whl", hash = "sha256:dd84e24422509e1ec9be46f67f758d0bd9944d1ae4eacecee4f53adaa8ecd822", size = 33978543, upload-time = "2025-08-01T01:42:36.779Z" },
+]

@@ -1,0 +1,7 @@
+# Data analysis and visualization dependencies
+pandas
+pyarrow
+matplotlib
+seaborn
+scikit-learn
+jupyter

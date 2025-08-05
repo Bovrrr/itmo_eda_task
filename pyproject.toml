@@ -1,0 +1,16 @@
+[project]
+name = "itmo-eda-task"
+description = "Financial transaction EDA and fraud detection"
+version = "0.1.0"
+authors = ["Bovrrr <anon@example.com>"]
+requires-python = ">=3.8"
+dependencies = [
+    "plotly>=6.2.0",
+    "polars>=1.8.2",
+]
+
+[tool.uv]
+# uv will use requirements.txt for dependencies
+
+[tool.jupyter]
+# Jupyter notebooks supported for analysis workflows
